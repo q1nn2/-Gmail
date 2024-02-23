@@ -9,21 +9,21 @@ class TestGmailLogin(unittest.TestCase):
         self.driver.get("https://www.gmail.com")
 
     def test_gmail_login(self):
-        # Введите вашу электронную почту и пароль
+        # Enter your email and password
         email = "your_email@gmail.com"
         password = "your_password"
 
-        # Найти поле для ввода электронной почты
+        # Find the e-mail input field
         email_field = self.driver.find_element_by_id("identifierId")
         email_field.send_keys(email)
         email_field.send_keys(Keys.ENTER)
 
-        # Найти поле для ввода пароля и ввести пароль
+        # Find the password field and enter the password
         password_field = self.driver.find_element_by_name("password")
         password_field.send_keys(password)
         password_field.send_keys(Keys.ENTER)
 
-        # Проверить, что мы успешно вошли в почту (можно добавить другие проверки)
+        # Check that we have successfully logged into the mail (you can add other checks)
         self.assertTrue("inbox" in self.driver.current_url)
 
     def tearDown(self):
