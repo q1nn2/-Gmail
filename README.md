@@ -6,13 +6,14 @@
 
 
 Клонирование Репозитория:
-git clone https://github.com/your_username/your_repository.git
+git clone https://github.com/q1nn2/-Gmail.git
 
 Переход в Директорию с Тестами:
 cd your_repository
 
 Установка зависимостей (Selenium):
 pip install selenium
+
 Запуск Теста:
 python gmail.py
 
